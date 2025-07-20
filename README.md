@@ -1,57 +1,25 @@
-🛒 ShopSmart: Your Digital Grocery Store
+# ShopSmart
 
-📌 Description ShopSmart is a full-stack web application that offers a seamless digital grocery shopping experience. Customers can explore a wide range of products, view categories, add items to the cart, and complete purchases securely. It also supports seller and admin functionality for product management and inventory control.
+<p align = "center"><img src="Pictures/Project Icon.png" width = 10%"></img></p>
+  
+ShopSmart is a package of tools for retailers to enable proximity marketing in their shops. The application provides the shoppers with personalized offers based on the proximity of the items, age and gender of the customers. The flow of data for this project is as follows: 
+<p align = "center"><img src="Pictures/Flowchart.png" align = "center"></img></p>
 
-Built using React, Node.js, Express, and MongoDB, ShopSmart is optimized for speed, user-friendliness, and scalability.
+## [Android application](https://github.com/Dheeraj1998/ShopSmart/tree/master/Android_Application)
+This application is to be installed on the mobile phones of customers. It provides the customers with two different types of offers:
+1. **Daily offers I/II**: These offers change on a daily basis according to the needs of the retailers. These offers are to be set with the use of the associated website.
+2. **Proximity offer**: These offers are sent to the user based on their location in the store. It also takes into consideration the age and gender of the customer.  
 
-🧰 Tech Stack
+### Application screenshots
+| ![Pictures/image-001.png](Pictures/image-001.png) | ![Pictures/image-002.png](Pictures/image-002.png) |
+| :---: | :---: |
+| Login page | Offer page | 
 
-Technology	Purpose
-React	Frontend UI
-Tailwind CSS	Responsive styling
-Express.js	Backend API
-Node.js	Server-side JavaScript runtime
-MongoDB	NoSQL database
-Mongoose	MongoDB object modeling
-Axios	HTTP client for API requests
-Vite	React build tool (for fast dev)
+## [Web application](https://github.com/AnshulHedau/ShopSmart-Desktop)
+This application gives vendors the access to set the personalized offers based on the proximity of the items, age and gender of the customer according to the different racks/shelves. The source code for the web application can be checked [here](https://github.com/AnshulHedau/ShopSmart-Desktop).
 
-📁 Folder Structure grocery-aisle-digital-hub-main/ │ ├── client/ # Frontend (React) │ ├── src/ │ │ ├── components/ # Shared components (Header, Footer, UI) │ │ ├── contexts/ # Cart context │ │ ├── pages/ # Pages (AllProductsPage, Cart, etc.) │ │ ├── data/ # Dummy item utils (fallback) │ │ └── main.tsx # Entry point │ ├── backend/ # Backend (Node.js + Express) │ ├── models/ # Mongoose models │ ├── routes/ # API routes │ ├── scripts/ # DB seeding script │ ├── data/ # seedProducts.json │ └── server.js # Main server file
+## [Python script](https://github.com/Dheeraj1998/ShopSmart/tree/master/Python_Processing)
+This script gets the input from the cameras around the store. The script will identify the age & gender of people in front of the rack. According to the location of the camera, this information is updated in Firebase to reflect the corresponding changes in the android application of the customer.
 
-✅ Features 🛍 For Users Browse 25–30 grocery items by category
-
-Filter and sort by name or price
-
-Add to cart with real-time notifications
-
-View item image, description, unit, and discount
-
-🧑‍💼 For Admins Add, update, or remove products (future scope)
-
-Inventory and sales insights (future scope)
-
-🧩 Tech Highlights Cart context using React Context API
-
-Backend API with Express & MongoDB
-
-Product seeding script (seed.js)
-
-Responsive design using TailwindCSS
-
-Modular code structure
-
-🚀 Getting Started
-
-Clone the repository
-git clone https://github.com/yourusername/shopsmart.git cd grocery-aisle-digital-hub-main ⚙ Backend Setup cd backend npm install Seed Products: node scripts/seed.js Start Server: node server.js Backend API will run at: http://localhost:5000/api/products
-💻 Frontend Setup cd client npm install npm run dev App will run at: http://localhost:5173
-
-📝 Future Improvements User authentication (JWT)
-
-Admin panel for sellers
-
-Payment gateway integration
-
-Product reviews and ratings
-
-Order history and tracking
+## Project details
+This project was developed as part of SELECT Makathon 2019 at Vellore Institute of Technology, Vellore. The group consisted of [Dheeraj Nair](https://www.linkedin.com/in/dheeraj1998), [Anshul Hedau](https://www.linkedin.com/in/anshul-hedau), [Abhinav Kumar](https://www.linkedin.com/in/abhinavkrs) and [Animesh Kumar](https://www.linkedin.com/in/animesh-kumar-130a6a109).
